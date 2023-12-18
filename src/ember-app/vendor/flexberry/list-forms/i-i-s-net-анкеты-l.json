@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-net-анкеты-e",
+  "editForm": "i-i-s-net-анкеты-e",
+  "external": false,
+  "caption": "Анкеты",
+  "name": "IISNetАнкетыL",
+  "className": "АнкетыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-net-анкеты",
+      "modelProjection": "АнкетыL"
+    }
+  ]
+}

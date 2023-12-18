@@ -1,0 +1,119 @@
+﻿{
+  "name": "IISNetПричинУвольн",
+  "modelName": "i-i-s-net-причин-увольн",
+  "className": "ПричинУвольн",
+  "nameSpace": "IIS.Net",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаЗаполн",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "оценПричУвольн",
+      "relatedTo": "i-i-s-net-оцен-прич-увольн",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "специалист",
+      "relatedTo": "i-i-s-net-специалист",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "рекомендации",
+      "relatedTo": "i-i-s-net-рекомендац",
+      "inverse": "причинУвольн"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПричинУвольнE",
+      "modelName": "i-i-s-net-причин-увольн",
+      "attrs": [
+        {
+          "name": "датаЗаполн",
+          "caption": "Дата заполнения",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ОценПричУвольн",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "неУдовл",
+              "caption": "Причина",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Причина",
+          "name": "оценПричУвольн",
+          "relatedTo": "i-i-s-net-оцен-прич-увольн",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Специалист",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "ФИО",
+          "name": "специалист",
+          "relatedTo": "i-i-s-net-специалист",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "РекомендацE",
+          "caption": "Рекомендации",
+          "name": "рекомендации",
+          "relatedTo": "i-i-s-net-рекомендац",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПричинУвольнL",
+      "modelName": "i-i-s-net-причин-увольн",
+      "attrs": [
+        {
+          "name": "датаЗаполн",
+          "caption": "Дата заполн",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

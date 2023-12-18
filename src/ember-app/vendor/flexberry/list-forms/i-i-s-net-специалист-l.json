@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-net-специалист-e",
+  "editForm": "i-i-s-net-специалист-e",
+  "external": false,
+  "caption": "Специалист",
+  "name": "IISNetСпециалистL",
+  "className": "СпециалистL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-net-специалист",
+      "modelProjection": "СпециалистL"
+    }
+  ]
+}

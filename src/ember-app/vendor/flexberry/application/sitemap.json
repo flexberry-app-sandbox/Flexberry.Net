@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Net",
+  "applicationTitle": "Net",
+  "items": [
+    {
+      "link": null,
+      "menuName": "net",
+      "caption": "Net",
+      "title": "Net",
+      "children": [
+        {
+          "link": "i-i-s-net-анкеты-l",
+          "menuName": null,
+          "caption": "Анкеты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-net-причин-увольн-l",
+          "menuName": null,
+          "caption": "Причин увольн",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-net-специалист-l",
+          "menuName": null,
+          "caption": "Специалист",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
